@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Todo List jQuery</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="flex flex-v-center date-content">
+            <div class="flex date">
+                <p class="day-number"></p>
+                <div>
+                    <p class="month"></p>
+                    <p class="year"></p>
+                </div>
+            </div>
+            <div class="day"></div>
+        </div>
+
+        <input type="text" id="task">
+        <button type="button" id="add"><i class="fas fa-plus"></i></button>
+
+        <ul class="tasks-list">
+        </ul>
+    </div>
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
