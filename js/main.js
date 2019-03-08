@@ -96,8 +96,14 @@ $('.tasks-list').on('click', '.remove', function (event) {
 
 /* check task on click on it */
 $('.tasks-list').on('click', 'li', function () {
-    $(this).children('.task-content').children('.check').toggleClass('checked');
-    $(this).children('.task-content').children('span').toggleClass('text-checked');
+    $(this).toggleClass('checked');
+    
+    if($(this).hasClass('checked')) {
+        $(this).slideUp(125, ()=>{
+            $(this).appendTo('.tasks-list')
+        })
+        $(this).slideDown(125)
+    }
 }).on('mouseenter mouseleave', 'li', function () {
     $(this).children('.remove').animate({
         width: 'toggle',
