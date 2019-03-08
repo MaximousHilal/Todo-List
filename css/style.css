@@ -156,11 +156,11 @@ li button {
     cursor: pointer;
 }
 
-.checked {
+.checked .check {
     color: #2cb961 !important;
 }
 
-.text-checked {
+.checked span {
     color: #F0EFE9;
 }
 
